@@ -13,8 +13,8 @@ function initialize() {
   var jsonObject = null;
   var markerCluster = null;
   var markers = [];
-  var latitude = 40.737756;
-  var longitude = -73.965866;
+  var latitude = 41.5013;
+  var longitude = -87.4105;
   var displayText;
   var displayDetail;
 
@@ -22,8 +22,8 @@ function initialize() {
 
 // Focus on NYC by default
   var defaultBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(40.717756, -74.005774),
-      new google.maps.LatLng(40.757297, -73.915866));
+      new google.maps.LatLng(41.5513, -87.4605),
+      new google.maps.LatLng(41.4513, -86.4605));
   map.fitBounds(defaultBounds);
 
 
