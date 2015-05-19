@@ -201,3 +201,7 @@ body{
   font-weight: 400;
   text-align: center;
 }
+
+.btn {
+  width: 95% !important;
+}

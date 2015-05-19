@@ -58,19 +58,19 @@ function initialize() {
 
     switch(event.feature.getProperty("bar")) {
     case 1:
-        displayText = '<ul><li><img src="img/storm.jpg"/></li><li><div id="content">Be careful, stormy weather ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
-        break;
+        displayText = '<ul><li><img src="img/very_dry.jpg"/></li><li><div id="content">Sunny time. Enjoy ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
+        break;       
     case 2:
-        displayText = '<ul><li><img src="img/rain.jpg"/></li><li><div id="content">It\'s raining outside ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
-        break;
+        displayText = '<ul><li><img src="img/fair.jpg"/></li><li><div id="content">Sunny but cloudy! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
+        break;        
     case 3:
         displayText = '<ul><li><img src="img/change.jpg"/></li><li><div id="content">The weather is changing ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
         break;
     case 4:
-        displayText = '<ul><li><img src="img/fair.jpg"/></li><li><div id="content">Sunny but cloudy! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
+        displayText = '<ul><li><img src="img/rain.jpg"/></li><li><div id="content">It\'s raining outside ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
         break;
     case 5:
-        displayText = '<ul><li><img src="img/very_dry.jpg"/></li><li><div id="content">Sunny time. Enjoy ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
+        displayText = '<ul><li><img src="img/storm.jpg"/></li><li><div id="content">Be careful, stormy weather ! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
         break;
     default:
         displayText = '<ul><li><img src="img/fair.jpg"/></li><li><div id="content">Sunny but cloudy! </div> <span id="temp">' +event.feature.getProperty("temperature").toString() + '</span> </ul>';
