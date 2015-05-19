@@ -77,7 +77,7 @@ function initialize() {
         
     }
 
-    Materialize.toast(displayText, 3000, 'notfiication');
+    Materialize.toast(displayText, 3000, 'notification');
     // This is where I want to check if point(s) fall within it.
     if(event.feature.getProperty("tourism")!="None"){
       displayDetail = event.feature.getProperty("tourism");
