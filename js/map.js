@@ -77,7 +77,7 @@ function initialize() {
         
     }
 
-    Materialize.toast(displayText, 3000, 'notification');
+    Materialize.toast(displayText, 3000, 'notfiication');
     // This is where I want to check if point(s) fall within it.
     if(event.feature.getProperty("tourism")!="None"){
       displayDetail = event.feature.getProperty("tourism");
@@ -98,6 +98,15 @@ function initialize() {
       displayDetail = event.feature.getProperty("sport");
     }
 
+    if(event.feature.getProperty("name") == "Lincoln Park Zoo"){
+      document.getElementById("imageid").src='http://skirtpr.com/blog/wp-content/uploads/Lincoln-Park-Zoo-Ball-2012-91.jpg';
+    }
+    if(event.feature.getProperty("name") =="Devil's Bridge"){
+      document.getElementById("imageid").src="http://www.michaelwalkerphotos.com/NorthAmerica/United-States/Devils-Bridge-Hike-Sedona/i-2TCcxkh/0/X2/_1MW5520-X2.jpg";
+    }
+    if(event.feature.getProperty("name") == "Table top"){
+      document.getElementById("imageid").src="http://sevennaturalwonders.org/wp-content/uploads/2008/12/shutterstock_70581703.jpg";
+    }
 
     $("#span1").text(event.feature.getProperty("name"));
     $("#span2").text(displayDetail);
